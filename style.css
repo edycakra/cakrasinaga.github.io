@@ -220,6 +220,65 @@ nav li a:hover {
 }
 
 .dl-publication:hover {
-  background-color: blue;
+  background-color: green;
   color: black;
+}
+
+.tableau {
+  padding-left: 30vw;
+}
+
+.dl-tableau {
+  border: 1px solid white;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.dl-tableau:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/*DIAMOND*/
+.diamond-page {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2021&q=80); */
+  background-color: #00091a;
+  height: 120vh;
+  background-size: cover;
+  background-position: center; 
+  text-align: left;
+  color: white;
+}
+
+.diamond {
+padding-left: 30vw;
+padding-top: 20vh;
+}
+
+.text-diamond {
+font-size: 30px;
+font-weight: 600;
+}
+
+/*PARALLELOGRAM*/
+.parallelogram-page {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2021&q=80); */
+  background-color: #00091a;
+  height: 120vh;
+  background-size: cover;
+  background-position: center; 
+  text-align: left;
+  color: white;
+}
+
+.parallelogram {
+padding-left: 30vw;
+padding-top: 20vh;
+}
+
+.text-parallelogram {
+font-size: 30px;
+font-weight: 600;
 }

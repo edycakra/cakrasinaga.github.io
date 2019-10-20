@@ -8,6 +8,29 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600, 800, 900' rel='stylesheet' type='text/css'>
   <link href="./style.css" rel="stylesheet" type="text/css">
   <title>my projects - cakrasinaga</title>
+  <script>
+    function printParallelogram() {
+        document.getElementById("result").innerHTML = "";
+        var limit = document.getElementById("limit").value;
+
+        if (limit < 2 || limit > 21) {
+            alert('Please enter value between 1 and 21');
+            return;
+        }
+
+        var space = limit;
+        for (i = space-1; i >= 0; i--) {
+            for (j = 0; j < i; j++) {
+                document.getElementById("result").insertAdjacentHTML('beforeend', '&nbsp;');
+            }
+            for (k = 0; k < space; k++) {
+                document.getElementById("result").insertAdjacentHTML('beforeend', '*');
+            }
+            document.getElementById("result").insertAdjacentHTML('beforeend', '<br>');
+        }
+
+    }
+</script>
 </head>
 
 </body>
@@ -21,16 +44,16 @@
         <li>|</li>
         <li><a href="skill.html">Skills</a></li>
         <li>|</li>
-        <li><a href="resume.html"><span class="pg-active">My Projects</span></a></li>
+        <li><a href="resume.html"><span class="pg-active">My Projects: Parallelogram Generator</span></a></li>
       </ul>
     </nav>
   </header>
 
 <main>
-    <div class="resume-page">
-      <div class="resume">
-        <p class="text-resume">Asterisk Pattern: Parallelogram</p>
-        SOON!
+    <div class="parallelogram-page">
+      <div class="parallelogram">
+        <p class="text-parallelogram">Asterisk Pattern: Parallelogram</p>
+        Enter the limit:  <input type="number" id="limit" min="2" max="100" />&nbsp;<input type="button" value="Print Parallelogram Pattern!" onclick="printParallelogram()" name="print" />
         <br /> <br />
         <div id="result"></div>
       </div>
