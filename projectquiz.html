@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600, 800, 900' rel='stylesheet' type='text/css'>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <title>my projects - cakrasinaga</title>
+</head>
+
+  <header>
+    <a href="index.html" class="logo"><img src="../img/tabs/rocket.png"></a>
+  </header>
+
+  <body>
+    <div id="container">
+        <div id="start">Press Here to Start!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+<footer>
+  <div>
+    <p>&copy; Edycakra Sinaga - Hacktiv8 Student - 2019</p>
+  </div>
+</footer>
+
+</body>
