@@ -15,21 +15,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Apa itu Hacktiv8?",
-        imgSrc : "img/hacktiv8-logo.png",
+        imgSrc : "img/projectquiz/hacktiv8-logo.png",
         choiceA : "Coding Bootcamp",
         choiceB : "Minuman Susu Fermentasi",
         choiceC : "Grup Hacker",
         correct : "A"
     },{
         question : "Ada berapa fase dalam program Full Stack Immersive milik Hacktiv8?",
-        imgSrc : "img/hacktiv8-logo.png",
+        imgSrc : "img/projectquiz/hacktiv8-logo.png",
         choiceA : "1",
         choiceB : "3",
         choiceC : "2",
         correct : "B"
     },{
         question : "Manakah yang dipelajari di Phase 0 sebelum program Full Stack Immersive?",
-        imgSrc : "img/hacktiv8-logo.png",
+        imgSrc : "img/projectquiz/hacktiv8-logo.png",
         choiceA : "Python",
         choiceB : "Ruby",
         choiceC : "Javascript",
@@ -142,11 +142,11 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    let img = (scorePerCent >= 80) ? "img/projectquiz/5.png" :
+              (scorePerCent >= 60) ? "img/projectquiz/4.png" :
+              (scorePerCent >= 40) ? "img/projectquiz/3.png" :
+              (scorePerCent >= 20) ? "img/projectquiz/2.png" :
+              "img/projectquiz/1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
