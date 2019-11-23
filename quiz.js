@@ -17,7 +17,7 @@ let questions = [
         question : "Apa itu Hacktiv8?",
         imgSrc : "img/projectquiz/hacktiv8-logo.png",
         choiceA : "Coding Bootcamp",
-        choiceB : "Minuman Susu Fermentasi",
+        choiceB : "Susu Fermentasi",
         choiceC : "Grup Hacker",
         correct : "A"
     },{
