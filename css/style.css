@@ -1,0 +1,75 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-theme-1 {
+    background-color:transparent;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.5s;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.navbar-theme-2 {
+    background-color: #120136 !important;
+}
+
+.link {
+    color: #fcbf1e;
+}
+
+.link:hover {
+    color: white;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#profilepic {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+}
+
+#imgsub {
+    animation-name: flash;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#downarrow {
+    animation-name: fasterflash;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fasterflash {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 20px;
+        opacity: 1;
+    }
+}
